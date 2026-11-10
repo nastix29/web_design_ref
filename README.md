@@ -1,7 +1,7 @@
 # Two26 Studio — статическая копия сайта
 
 - Референс: https://two26.studio/
-- Сайт: https://nastix29.github.io/chirkunova-web-game3/
+- Сайт: https://nastix29.github.io/web_design_ref/
 - Репозиторий: https://github.com/nastix29/web_design_ref.git
   
 Откройте `index.html` в браузере (Chrome / Safari / Firefox). Сборка и интернет не нужны:
