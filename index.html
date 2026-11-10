@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Two26 Studio | Boutique Design Studio</title>
+  <meta name="description" content="Two26 is a boutique design studio in Bucharest creating brands with strategy, personality and attention to detail.">
+  <meta name="theme-color" content="#f9dce0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading" data-page="home">
+
+<!-- Logo symbol (used in header & footer) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="-6 4 314 94">
+    <g fill="none" stroke="currentColor" stroke-width="11">
+      <path d="M2,12 H46 M24,12 V92"/>
+      <path d="M58,12 V62 C58,82 66,92 78,92 C92,92 100,78 100,62 C100,50 96,44 92,44 C88,44 84,50 84,62 C84,78 92,92 106,92 C118,92 126,82 126,62 V12"/>
+      <path d="M160,12 C148,12 138,28 138,52 C138,76 148,92 160,92 C172,92 182,76 182,52 C182,28 172,12 160,12 Z"/>
+      <path d="M208,31 C208,19 216,12 227,12 C239,12 246,20 246,31 C246,44 235,52 224,62 C214,71 208,80 208,92 H249"/>
+      <path d="M297,22 C292,15 285,12 277,12 C263,12 256,28 256,52 C256,76 264,92 279,92 C293,92 301,82 301,68 C301,54 292,45 279,45 C267,45 258,53 257,62"/>
+    </g>
+  </symbol>
+</svg>
+
+<!-- ============ PRELOADER ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <svg class="loader__logo" viewBox="-8 2 206 262" fill="none" stroke="currentColor" stroke-width="11">
+    <path pathLength="1" d="M2,12 H46 M24,12 V92"/>
+    <path pathLength="1" d="M58,12 V62 C58,82 66,92 78,92 C92,92 100,78 100,62 C100,50 96,44 92,44 C88,44 84,50 84,62 C84,78 92,92 106,92 C118,92 126,82 126,62 V12"/>
+    <path pathLength="1" d="M160,12 C148,12 138,28 138,52 C138,76 148,92 160,92 C172,92 182,76 182,52 C182,28 172,12 160,12 Z"/>
+    <g transform="translate(-4 104) scale(1.86) translate(-204 -8)" stroke-width="5.9">
+      <path pathLength="1" d="M208,31 C208,19 216,12 227,12 C239,12 246,20 246,31 C246,44 235,52 224,62 C214,71 208,80 208,92 H249"/>
+      <path pathLength="1" d="M297,22 C292,15 285,12 277,12 C263,12 256,28 256,52 C256,76 264,92 279,92 C293,92 301,82 301,68 C301,54 292,45 279,45 C267,45 258,53 257,62"/>
+    </g>
+  </svg>
+  <div class="loader__wipe"></div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <a href="index.html" class="header__logo" aria-label="Two26 Studio — home">
+    <svg><use href="#logo"/></svg>
+  </a>
+  <span class="header__label" id="headerLabel"></span>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+    <span class="menu-btn__icon"></span>
+  </button>
+</header>
+
+<!-- ============ MENU ============ -->
+<nav class="menu" id="menu" aria-hidden="true">
+  <a href="work.html" class="menu__pill">Work</a>
+  <a href="index.html#about" class="menu__pill" data-close>About us</a>
+  <a href="#contact" class="menu__pill menu__pill--dark" data-close>Let's Talk <span class="dot">↗</span></a>
+</nav>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" data-header-theme="pink">
+    <h1 class="hero__title">
+      <span class="mask"><span class="line">Looking</span></span>
+      <span class="mask"><span class="line">suspiciously</span></span>
+      <span class="mask"><span class="line">good</span></span>
+      <span class="pill pill--dark hero__pill" style="--r:-3deg; top:18%; left:43%"><span>Independent studio</span></span>
+      <span class="pill pill--dark hero__pill" style="--r:-9deg; top:47%; left:8%"><span>Branding &amp; design</span></span>
+      <span class="pill pill--dark hero__pill" style="--r:-5deg; top:80%; left:55%"><span>No funny business</span></span>
+    </h1>
+
+    <div class="hero__art">
+      <video id="heroVideo" poster="assets/img/hero-poster.jpg" muted playsinline preload="auto">
+        <source src="assets/video/hero-walkers.mp4" type="video/mp4">
+        <source src="assets/video/hero-walkers.webm" type="video/webm">
+      </video>
+    </div>
+  </section>
+
+  <!-- ============ ARC TICKER + ABOUT ============ -->
+  <section class="about" id="about" data-label="A bit about us" data-header-theme="cream">
+    <svg class="about__arc" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,120 L0,96 Q190,10 400,26 L400,120 Z" fill="var(--cream)"/>
+    </svg>
+    <svg class="ticker" viewBox="0 0 400 120" aria-hidden="true">
+      <path id="arcPath" d="M-40,112 Q190,4 460,20" fill="none" stroke="var(--orange)" stroke-width="27"/>
+      <text class="ticker__text" dy="5.6"><textPath id="tickerText" href="#arcPath" startOffset="0">LET'S MAKE IT MAKE SENSE • GOOD LOOKS INCLUDED • LET'S MAKE IT MAKE SENSE • GOOD LOOKS INCLUDED • LET'S MAKE IT MAKE SENSE • GOOD LOOKS INCLUDED • LET'S MAKE IT MAKE SENSE • GOOD LOOKS INCLUDED •</textPath></text>
+    </svg>
+
+    <div class="about__pin" id="aboutPin">
+      <div class="about__sticky">
+        <p class="eyebrow about__eyebrow">A bit about us</p>
+        <div class="about__textwrap">
+          <p class="about__text" id="aboutText">We believe creative work needs focus. That’s why we keep our team tight and our involvement high, so every project gets our full attention. We build brands from scratch or make them better.</p>
+          <span class="pill pill--orange about__pill" data-at="0.22" style="--r:-6deg; top:9%; left:20%"><span>Professional overthinkers</span></span>
+          <span class="pill pill--orange about__pill" data-at="0.5" style="--r:7deg; top:52%; left:-2%"><span>Nerding out on design</span></span>
+          <span class="pill pill--orange about__pill" data-at="0.82" style="--r:-8deg; top:76%; left:60%"><span>Allergic to generic</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="strip" id="strip">
+      <div class="strip__track">
+        <img src="assets/img/about-wine.jpg" alt="Illustration: wine and dinner table" loading="lazy">
+        <img src="assets/img/about-witch.jpg" alt="Illustration: witch on a broom with a laptop" loading="lazy">
+        <img src="assets/img/about-wine.jpg" alt="" loading="lazy">
+        <img src="assets/img/about-witch.jpg" alt="" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SELECTED WORKS ============ -->
+  <section class="works" id="work" data-header-theme="cream">
+    <h2 class="display works__title reveal-lines"><span class="mask"><span class="line">Selected</span></span><span class="mask"><span class="line">works</span></span></h2>
+
+    <div class="works__list">
+      <a class="work" href="work.html">
+        <div class="work__media"><img src="assets/img/work-heygluco.jpg" alt="HeyGluco plush mascot" loading="lazy"></div>
+        <div class="work__meta">
+          <img class="work__icon" src="assets/img/icon-heygluco.jpg" alt="">
+          <div><h3>HeyGluco</h3><p>Health &amp; Wellness</p></div>
+          <span class="arrow">↗</span>
+        </div>
+      </a>
+      <a class="work" href="work.html">
+        <div class="work__media"><img src="assets/img/work-bagel.jpg" alt="The Bagel Bar branding" loading="lazy"></div>
+        <div class="work__meta">
+          <img class="work__icon" src="assets/img/icon-bagel.jpg" alt="">
+          <div><h3>The Bagel Bar</h3><p>Food &amp; Beverage</p></div>
+          <span class="arrow">↗</span>
+        </div>
+      </a>
+      <a class="work" href="work.html">
+        <div class="work__media"><img src="assets/img/work-tanti.jpg" alt="Tanti Maria paper bag" loading="lazy"></div>
+        <div class="work__meta">
+          <img class="work__icon" src="assets/img/icon-tanti.jpg" alt="">
+          <div><h3>Tanti Maria</h3><p>Food &amp; Retail</p></div>
+          <span class="arrow">↗</span>
+        </div>
+      </a>
+      <a class="work" href="work.html">
+        <div class="work__media"><img src="assets/img/work-munchies.jpg" alt="Munchies and Cream boxes" loading="lazy"></div>
+        <div class="work__meta">
+          <img class="work__icon" src="assets/img/icon-munchies.jpg" alt="">
+          <div><h3>Munchies and Cream</h3><p>Food &amp; Beverage</p></div>
+          <span class="arrow">↗</span>
+        </div>
+      </a>
+      <a class="work" href="work.html">
+        <div class="work__media"><img src="assets/img/work-mvp.jpg" alt="MVP Agency logo over skateboarder" loading="lazy"></div>
+        <div class="work__meta">
+          <img class="work__icon" src="assets/img/icon-mvp.jpg" alt="">
+          <div><h3>MVP</h3><p>Sports &amp; Talent Management</p></div>
+          <span class="arrow">↗</span>
+        </div>
+      </a>
+      <a class="work" href="work.html">
+        <div class="work__media"><img src="assets/img/work-yumyum.jpg" alt="Yum Yum bottle" loading="lazy"></div>
+        <div class="work__meta">
+          <img class="work__icon" src="assets/img/icon-yumyum.jpg" alt="">
+          <div><h3>Yum Yum</h3><p>Food &amp; Beverage</p></div>
+          <span class="arrow">↗</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="more">
+      <h2 class="display more__title reveal-lines">
+        <span class="mask"><span class="line">We could</span></span>
+        <span class="mask"><span class="line">keep going,</span></span>
+        <span class="mask"><span class="line">but there’s a</span></span>
+        <span class="mask"><span class="line">whole page</span></span>
+        <span class="mask"><span class="line">for that.</span></span>
+        <span class="pill pill--dark pop" style="--r:-6deg; top:6%; right:-4%"><span>The plot thickens</span></span>
+        <span class="pill pill--dark pop" style="--r:5deg; top:40%; left:-6%"><span>Very convenient</span></span>
+        <span class="pill pill--dark pop" style="--r:-4deg; top:88%; right:6%"><span>There’s more</span></span>
+      </h2>
+      <a class="btn pop" href="work.html"><span>See all projects</span><span class="dot">↗</span></a>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services" data-header-theme="cream">
+    <h2 class="display services__title reveal-lines"><span class="mask"><span class="line">This is our</span></span><span class="mask"><span class="line">thing</span></span></h2>
+
+    <div class="services__body" id="servicesBody">
+      <svg class="services__svg" id="servicesSvg" aria-hidden="true">
+        <path class="track" id="snakeTrack"/>
+        <path class="line" id="snakeLine"/>
+      </svg>
+      <ul class="services__list">
+        <li class="service"><h3>Brand<br>strategy<img class="sticker" src="assets/img/st-strategy.png" alt=""></h3></li>
+        <li class="service"><h3>Brand<br>identity<img class="sticker" src="assets/img/st-identity.png" alt=""></h3></li>
+        <li class="service"><h3>Web<br>design<img class="sticker" src="assets/img/st-web.png" alt=""></h3></li>
+        <li class="service"><h3>Illustration<img class="sticker" src="assets/img/st-illustration.png" alt=""></h3></li>
+        <li class="service"><h3>Motion<br>design<img class="sticker" src="assets/img/st-motion.png" alt=""></h3></li>
+        <li class="service"><h3>Packaging<br>design<img class="sticker" src="assets/img/st-packaging.png" alt=""></h3></li>
+        <li class="service"><h3>Art<br>direction<img class="sticker" src="assets/img/st-art.png" alt=""></h3></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials" id="testimonials" data-header-theme="cream">
+    <h2 class="display testimonials__title reveal-lines"><span class="mask"><span class="line">Apparently,</span></span><span class="mask"><span class="line">they like us</span></span></h2>
+
+    <div class="t-pin" id="tPin">
+      <div class="t-sticky">
+        <div class="t-panel" data-header-theme="orange">
+          <div class="deck" id="deck">
+            <article class="card">
+              <div class="card__in">
+                <h3>Working with Bogdan and Diana has been one of the smoothest collaborations I’ve had</h3>
+                <div class="card__who"><img src="assets/img/av-ruxandra.jpg" alt=""><div><strong>Ruxandra Florescu</strong><small>COO, Dare Digital</small></div></div>
+                <p>They’re sharp, always responsive, and have a real talent for turning briefs into compelling visuals. No matter the challenge: tight deadlines, shifting requirements, tricky creative constraints, they always show up with solutions. Highly recommend working with them!</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__in">
+                <h3>Bogdan and Diana truly brought HeyGluco to life</h3>
+                <div class="card__who"><img src="assets/img/av-luiza.jpg" alt=""><div><strong>Luiza Zamfirescu</strong><small>Co-Founder, HeyGluco</small></div></div>
+                <p>Both of them are truly amazing humans, with an incredible amount of creativity and talent. They took our vision, understood it completely, and brought it to life in ways that went beyond anything we could have imagined. We absolutely loved working with them and feel incredibly lucky that, along the way, we got to call them friends. We cannot brag about them or recommend them highly enough. They are the kind of people you feel lucky to have found, and luckier to have worked with! ❤️</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__in">
+                <h3>Working with Two26 is a bit like brainstorming ideas with your best friends</h3>
+                <div class="card__who"><img src="assets/img/av-vlad.jpg" alt=""><div><strong>Vlad Belcin</strong><small>Sr. Copywriter, Dare Digital</small></div></div>
+                <p>Always fun, always insightful, always constructive. It hardly feels like working, cause the whole process is always so smooth. That’s what you get for getting the job done with cool creatives, I guess.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__in">
+                <h3>Four projects and counting</h3>
+                <div class="card__who"><img src="assets/img/av-ionut.jpg" alt=""><div><strong>Ionut Belet</strong><small>Founder, MVP Agency</small></div></div>
+                <p>We’ve worked together on two websites and two visual identities so far, and it’s been a pleasure every time. Great ideas, really well executed, and just lovely people to work with. Pretty sure we’re not done yet.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__in">
+                <h3>Better than we imagined</h3>
+                <div class="card__who"><img src="assets/img/av-monica.jpg" alt=""><div><strong>Monica Tantu</strong><small>Co-Founder, Merci</small></div></div>
+                <p>Working with Two26 on our brand identity was a great experience from start to finish. They’re incredibly creative and thoughtful, but also easy to work with and genuinely invested in getting things right. They brought ideas we wouldn’t have thought of ourselves and gave the brand a personality that really feels like us. You can tell they care about the work, but also about the people behind it.</p>
+              </div>
+            </article>
+          </div>
+          <div class="ticks" id="ticks"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" data-header-theme="cream">
+    <div class="faq__head">
+      <p class="eyebrow">Frequently asked<br>questions</p>
+      <h2 class="display reveal-lines"><span class="mask"><span class="line">Things</span></span><span class="mask"><span class="line">you</span></span><span class="mask"><span class="line">might ask</span></span></h2>
+      <img class="faq__cat" src="assets/img/cat.jpg" alt="Sleeping cat illustration">
+    </div>
+
+    <div class="faq__list" id="faq">
+      <div class="qa"><button class="q">What kind of projects do you take on?</button>
+        <div class="a"><div class="a__in"><p>Branding is our main thing, from strategy and identity to packaging, illustration, motion and web design. We like projects where there’s room to think, question things and build something with a bit of character.</p></div></div></div>
+      <div class="qa"><button class="q">How much does a branding project cost?</button>
+        <div class="a"><div class="a__in"><p>It depends on what we’re making. Every project is a little different, so we price based on scope rather than pulling a mysterious number out of a hat. Tell us what you have in mind and we’ll take it from there.</p></div></div></div>
+      <div class="qa"><button class="q">Can you work with a brand that already exists?</button>
+        <div class="a"><div class="a__in"><p>Of course. Not everything needs to be burned to the ground and rebuilt. Sometimes a brand just needs a fresh pair of eyes and a few very intentional changes.</p></div></div></div>
+      <div class="qa"><button class="q">Do you work with clients outside Romania?</button>
+        <div class="a"><div class="a__in"><p>Absolutely. We’re based in Bucharest, but our Wi-Fi travels remarkably well. We’re happy to work with people pretty much anywhere.</p></div></div></div>
+      <div class="qa"><button class="q">What if we don’t like the first concepts?</button>
+        <div class="a"><div class="a__in"><p>We talk about why. Feedback is part of the process, and nothing is presented just because “we thought it looked cool.” Although we do like when things look cool.</p></div></div></div>
+      <div class="qa"><button class="q">How involved do we need to be?</button>
+        <div class="a"><div class="a__in"><p>Involved enough. We’ll need your knowledge, feedback and decisions along the way. Don’t worry, we won’t make you sit next to us while we move things two pixels to the left.</p></div></div></div>
+      <div class="qa"><button class="q">Can you start yesterday?</button>
+        <div class="a"><div class="a__in"><p>We checked. Unfortunately, yesterday is fully booked. But send us a message and we’ll tell you when we can realistically get started.</p></div></div></div>
+      <div class="qa"><button class="q">Do you work with small businesses?</button>
+        <div class="a"><div class="a__in"><p>Yep. Company size matters less to us than the project, the people behind it and what we can actually do together.</p></div></div></div>
+      <div class="qa"><button class="q">Do you also develop websites?</button>
+        <div class="a"><div class="a__in"><p>We design them. For development, we work with people we trust and can bring them into the project when needed. So yes, your website can actually become a website.</p></div></div></div>
+      <div class="qa"><button class="q">What’s with all the cats?</button>
+        <div class="a"><div class="a__in"><p>Those are Oreo and Oliver. They’re not technically employed by Two26, but they’ve somehow made it into the brand anyway. They mostly sleep through meetings and contribute very little creatively. We keep them around.</p></div></div></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact" data-header-theme="orange">
+  <svg class="footer__texture" viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="rgba(255,255,255,.13)" stroke-width="18" stroke-linecap="round">
+      <path d="M-30 60 C60 10 150 120 90 170 C40 210 0 140 60 110 C140 70 220 160 300 120 C360 90 330 20 280 40 C220 70 300 180 420 150"/>
+      <path d="M-20 360 C60 300 120 420 200 380 C260 350 240 280 190 300 C140 320 170 420 260 440 C340 460 380 380 430 400"/>
+      <path d="M-40 620 C40 560 140 680 110 720 C80 760 30 700 90 660 C170 610 250 700 330 650 C380 620 360 560 320 580"/>
+    </g>
+  </svg>
+
+  <div class="footer__inner">
+    <h2 class="footer__title">Okay, that’s<br>enough<br>website</h2>
+    <a class="btn" href="mailto:bogdan@two26.studio"><span>Let's Talk</span><span class="dot">↗</span></a>
+
+    <div class="footer__mail">
+      <span class="label">Email us</span>
+      <a href="mailto:bogdan@two26.studio">bogdan@two26.studio</a>
+    </div>
+
+    <div class="footer__cols">
+      <nav>
+        <span class="label">Main Menu</span>
+        <a href="work.html">Work</a>
+        <a href="index.html#about">About us</a>
+      </nav>
+      <nav class="footer__social">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram <small>↗</small></a>
+        <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance <small>↗</small></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn <small>↗</small></a>
+      </nav>
+    </div>
+
+    <div class="footer__cols footer__bottom">
+      <p>Handmade by humans.<br>Well, digitally</p>
+      <p class="right">Bucharest,<br>Romania</p>
+    </div>
+    <small class="footer__copy">© Copyright <span class="year">2026</span> - Two26 Studio</small>
+  </div>
+  <svg class="footer__logo" aria-hidden="true"><use href="#logo"/></svg>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
