@@ -2,8 +2,8 @@
 
 - Референс: https://two26.studio/
 - Сайт: https://nastix29.github.io/chirkunova-web-game3/
-- Репозиторий: https://github.com/nastix29/chirkunova-web-game3
-
+- Репозиторий: https://github.com/nastix29/web_design_ref.git
+  
 Откройте `index.html` в браузере (Chrome / Safari / Firefox). Сборка и интернет не нужны:
 шрифты, картинки и видео лежат в `assets/`.
 
